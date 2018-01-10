@@ -1,11 +1,5 @@
-module CStackLinux [system] {
-  header "/usr/include/stack.h"
-  link "stack"
-  export *
-}
-
-module CStackMac [system] {
-  header "/usr/local/include/stack.h"
+module CStack [system] {
+  header "shim.h"
   link "stack"
   export *
 }
