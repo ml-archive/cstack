@@ -9,5 +9,11 @@ let package = Package(
     providers: [
         .brew(["vapor/tap/cstack"]),
         .apt(["cstack"])
+    ],
+    products: [
+        .library(name: "CStack", targets: ["CStack"])
+    ],
+    targets: [
+        .target(name: "CStack")
     ]
 )
